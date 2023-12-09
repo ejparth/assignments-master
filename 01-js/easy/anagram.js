@@ -16,7 +16,7 @@ function isAnagram(str1, str2) {
     // Check if the current character is present in str2
     if (lowerstr2.indexOf(currentChar) === -1)  {
       // If any character is not found, return false
-      return false;
+      return false;  
     }
 
     // also check the lenth to ensure only the charachters present in str1 is only present in str2
