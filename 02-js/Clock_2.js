@@ -1,5 +1,5 @@
-/*We have already covered this in the second lesson, but as an easy recap try to code a counter in Javascript
-It should go up as time goes by in intervals of 1 second*/
+
+//Without using setInterval, try to code a counter in Javascript. There is a hint at the bottom of the file if you get stuck.
 
 function Currentime() {
     // Create a new Date object
@@ -14,9 +14,9 @@ function Currentime() {
     console.log('Current Time: ' + hours + ':' + minutes + ':' + seconds);
 
  
-    //calling setTimeout to clear the screen and for 1sec wait
-    setTimeout(clearConsole, 1000);
-
+ //calling setTimeout to clear the screen and for 1sec wait
+ setTimeout(clearConsole, 1000);
+ setTimeout(Currentime, 1000);
 }
 
 function clearConsole() {
@@ -24,4 +24,4 @@ function clearConsole() {
 }
 
 // Set interval to execute logMessage function every 1000 milliseconds (1 second)
-var intervalId = setInterval(Currentime, 1000);
+setTimeout(Currentime, 1000);
